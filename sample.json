@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "Url": "slide-1",
+        "ImageUrl": "sample-slider.gif",
+        "SlideOrder": 0
+    },
+    {
+        "Id": 2,
+        "Url": "slide-2",
+        "ImageUrl": "sample-slider.gif",
+        "SlideOrder": 1
+    },
+    {
+        "Id": 3,
+        "Url": "slide-3",
+        "ImageUrl": "sample-slider.gif",
+        "SlideOrder": 2
+    },
+    {
+        "Id": 4,
+        "Url": "slide-4",
+        "ImageUrl": "sample-slider.gif",
+        "SlideOrder": 3
+    }
+]

@@ -1,0 +1,44 @@
+/*-------------------------------------
+  Variables
+-------------------------------------*/
+
+  $turquoise: #009999;
+  $amber: #f47920;
+  $amberLight: #ec9600;
+  $grey: #666666;
+  $lightGrey: #ededed;
+  $medGrey: #ccc;
+
+/*-------------------------------------
+  Imports
+-------------------------------------*/
+
+  @import "compass/css3";
+
+/*-------------------------------------
+  Plugin
+-------------------------------------*/
+
+.slider{
+  margin: 10px 0;
+  padding: 0 10px;
+  img{
+    display: block;
+    margin-bottom: 15px;
+  }
+  > .gallery{
+    float: left;
+    position: relative;
+    margin-right: 15px;
+    > img{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  > .thumbs{
+    float: right;
+    overflow: hidden;
+  }
+}
+

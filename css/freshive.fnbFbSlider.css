@@ -1,0 +1,31 @@
+/*-------------------------------------
+  Variables
+-------------------------------------*/
+/*-------------------------------------
+  Imports
+-------------------------------------*/
+/*-------------------------------------
+  Plugin
+-------------------------------------*/
+/* line 22, ../sass/freshive.fnbFbSlider.scss */
+.slider {
+  margin: 10px 0;
+  padding: 0 10px; }
+  /* line 25, ../sass/freshive.fnbFbSlider.scss */
+  .slider img {
+    display: block;
+    margin-bottom: 15px; }
+  /* line 29, ../sass/freshive.fnbFbSlider.scss */
+  .slider > .gallery {
+    float: left;
+    position: relative;
+    margin-right: 15px; }
+    /* line 33, ../sass/freshive.fnbFbSlider.scss */
+    .slider > .gallery > img {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  /* line 39, ../sass/freshive.fnbFbSlider.scss */
+  .slider > .thumbs {
+    float: right;
+    overflow: hidden; }
