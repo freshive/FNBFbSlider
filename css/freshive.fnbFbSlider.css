@@ -21,7 +21,7 @@
     position: relative;
     margin-right: 15px; }
     /* line 33, ../sass/freshive.fnbFbSlider.scss */
-    .slider > .gallery > img {
+    .slider > .gallery > a {
       position: absolute;
       top: 0;
       left: 0; }

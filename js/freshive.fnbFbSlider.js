@@ -70,10 +70,12 @@
       index = 0;
 
     $.each(data, function() {
-      var image = document.createElement("img");
+      var $link = $(document.createElement("a")).attr("href", this.Url),
+        image = document.createElement("img");
       image.setAttribute("src", this.ImageUrl);
       image.setAttribute("data-index", index += 1);
-      $gallery.append(image);
+      $link.append(image);
+      $gallery.append($link);
     });
 
     return this.$gallery = $gallery;
@@ -87,10 +89,12 @@
       index = 0;
 
     $.each(data, function() {
-      var image = document.createElement("img");
+      var $link = $(document.createElement("a")).attr("href", this.Url),
+        image = document.createElement("img");
       image.setAttribute("data-index", index += 1);
       image.setAttribute("src", this.ThumbUrl);
-      $thumbs.append(image);
+      $link.append(image);
+      $thumbs.append($link);
     });
 
     $thumbs.prepend($thumbs.find("img").slice(-this.visible).clone().addClass("cloned"));
