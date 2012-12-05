@@ -18,8 +18,8 @@
   var pluginName = 'FNBFbSlider',
       defaults = {
         interval: 4000,
-        dataUrl: "sample.json"
-        //dataUrl: "http://10.211.55.4:5146/api/sliderimages"
+        //dataUrl: "sample.json"
+        dataUrl: "//fnbsocialmedia.co.za/fnbhub/api/sliderimages?callback=?"
       };
 
   // The actual plugin constructor
@@ -71,7 +71,7 @@
 
     $.each(data, function() {
       var image = document.createElement("img");
-      image.setAttribute("src", "images/" + this.ImageUrl);
+      image.setAttribute("src", this.ImageUrl);
       image.setAttribute("data-index", index += 1);
       $gallery.append(image);
     });
@@ -89,7 +89,7 @@
     $.each(data, function() {
       var image = document.createElement("img");
       image.setAttribute("data-index", index += 1);
-      image.setAttribute("src", "images/" + index + "-thumb-" + this.ImageUrl);
+      image.setAttribute("src", this.ThumbUrl);
       $thumbs.append(image);
     });
 
