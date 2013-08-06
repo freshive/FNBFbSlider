@@ -48,6 +48,8 @@
     // Get plugin data
     $.when(this.getData()).then($.proxy(function(data) {
 
+      data = this.sanitizeData(data);
+      
       this.numImages = data.length;
 
       this.$element.append(this.buildGallery(data));
@@ -60,9 +62,18 @@
     }, this));
   };
 
+  // Responsible for getting the slider data
   FNBFbSlider.prototype.getData = function () {
-    // Responsible for getting the slider data
     return $.getJSON(this.options.dataUrl);
+  };
+
+  // Have to sanitize the data until we have odata
+  // support in our api. This can then be removed
+  FNBFbSlider.prototype.sanitizeData = function (data) {
+    data = $(data).filter(function() {
+      return this.Enabled;
+    });
+    return data;
   };
 
   FNBFbSlider.prototype.buildGallery = function (data) {
